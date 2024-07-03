@@ -1,0 +1,233 @@
+$title: hao nguyen portfolio
+$description: a data analyst
+
+[home]
+    <img src="https://github.com/haonguyen97ftu/haonguyen97ftu.github.io/blob/main/avatar.png?raw=true" style="width:160px;border-radius:100%;filter:saturate(0)contrast(1.1)brightness(0.9);">      
+    
+    `Nguyễn Văn Hào | Hanoi` 
+    
+    I am currently looking for a job related to data analyst / business intelligence or assistant with background experience in marketing, business, banking and IT.
+
+
+    I have held the positions of account manager and project manager with the above experiences. I am someone who directly works with customers and understands the desires of business owners and those in charge of sales.
+
+    In addition, I am also in charge of the data analyst position for a number of projects and companies that need to report on excel, google sheets, and require large data visualization.
+
+    ### my contact
+    `Phone: 0968760810`
+    `Email: haonguyen97.ftu@gmail.com`
+    `Address: 68 Cau Giay Str, Quan Hoa Ward, Cau Giay District, Hanoi City`
+    - it's a [better motherfucking website](http://bettermotherfuckingwebsite.com/)
+    - makes you understand that _perfection isus achieved, not when there is nothing more to add, but when there is nothing left to take away_
+
+    ### using `imml`
+    Write in the editor on the left side and it will be parsed in real-time into the results shown on the right. Try that now! 
+    
+    // That's it, try editing something below this line! (P.S. this is a comment and will be ignored!)
+    
+    The web-based editor saves to localstorage, so feel free to come back to it later on - or you can manually save and load a file by using the toolbar buttons on the top left. The export button exports your site as a single .html file.
+  
+    Alternatively, write a file locally on your machine and then, with node.js installed, run `npx imml <path to your text file>` to generate a minified html file. Run `npx imml --help` or [click here](#cli) to find out more about the command line tool.
+
+    ### basic writing guide
+    Wrap text between `[square brackets]` to create a page and a link to it, then indent and write markdown to create the content for that page. The first page in the imml document is your home. Nest pages to create a site structure.
+
+    [markdown(markdown showcase)]
+        ## Writing Markdown
+        Make words **bold** by wrapping them in `**` or *italic* by wrapping them in `*`. Add [inline links](http://github.com/leoncvlt) with this syntax: `[link text](url)`.
+        Insert a newline for a manual line break...
+
+        ...or more than one. Whatever flows your boat!
+
+        Start lines with a `#` to create headings. Multiple `##` in a row denote smaller heading sizes:
+
+        ### This is a third-tier heading
+
+        You can use one `#` all the way up to `######` six for different heading sizes.
+
+        To insert a quote, start lines with a `>`:
+
+        > Coffee. The finest organic suspension ever devised... I beat the Borg with it.
+        > - Captain Janeway
+
+        Make ordered lists by starting lines with numbers:
+
+        1. One
+        2. Two
+        3. Three
+
+        Or, to make unordered, bullet lists:
+
+        * Start a line with a star
+        * Keep listing
+
+        - Dashes work just as well
+        - To make sub-points, add two spaces before the next item:
+            - Like this
+            - And this
+
+        Add a separator with three  or more hyphens `---`:
+
+        ---
+
+        Wrap `code` in back-ticks `` ` `` to render code inline. Alternatively, fence a block of text with three back-ticks ` ``` ` to render a block of code:
+        ```
+        float Q_rsqrt( float number )
+        {
+            long i;
+            float x2, y;
+            const float threehalfs = 1.5F;
+
+            x2 = number * 0.5F;
+            y  = number;
+            i  = * ( long * ) &y;                       // evil floating point bit level hacking
+            i  = 0x5f3759df - ( i >> 1 );               // what the fuck? 
+            y  = * ( float * ) &i;
+            y  = y * ( threehalfs - ( x2 * y * y ) );   // 1st iteration
+            y  = y * ( threehalfs - ( x2 * y * y ) );   // 2nd iteration, this can be removed
+
+            return y;
+        }
+        ```
+
+        Add images with this syntax: `![alt text](image_url)`
+        
+        ![Akira](https://i.pinimg.com/originals/39/95/0b/39950b377c4890460964775594a7c717.gif)
+
+        Add tables by using three or more hyphens `---` to create each column’s header, and use pipes `|` to separate each column:
+
+        | Title                 | Author                | Year
+        | --------------------- | --------------------- | ----
+        | The Forever War       | Joe Haldeman          | 1974
+        | Starship Troopers     | Robert A. Heinlein    | 1959
+        | Flowers for Algernon  | Daniel Keyes          | 1966
+        | Childhood's End       | Arthur C. Clarke      | 1953
+
+        You can also write html directly if you need to embed videos / iframes or create elements with specific classes:
+
+        <video controls src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" style="width:100%;"/>
+        
+
+    [guide(detailed writing guide)]
+        ### Pages
+        Wrap text between square brackets `[example]`, then indent the next line to create a new page. Anything you write in that indented block will then be part of this new page. All text inside pages is parsed as [markdown](#markdown).
+
+        When a page is created, its ID / hash `#` is inferred from the text inside the square brackets. As you can see from the address bar above, hashes are used to dictate which page is currently being displayed - this is achieved purely via CSS with the `target` selector.
+
+        ### Home page
+        The first page you create in the file is considered the home page of your site and will be displayed when no hash is specified. Anything before that is not rendered into the website - use that space for comments, attributions, or global `$options` (more on this later).
+
+        ### Nested pages
+        You can keep creating square-bracketed text in your page and indent again to create nested pages. When a page is created inside a page, a link to the new page is automatically added to the page at the position where the new indented nested block starts:
+
+        [newpage(Nested page)]
+            This page exists just to show an example of a nested page. There's really nothing else to see here! Use the breadcrumbs link at the top of the page to navigate back to a previous page.
+
+        Duplicated hashes / pages are automatically taken care of for you. If you create two pages `[page]` and `[page]`, the second one will be assigned a hash of `#page2`, but still be rendered as `page`.
+
+        ### Pages with label
+        If you want to use specify a label for the auto-generated link, include the label text between round brackets immediately before closing the square brackets: `[newpage(Fancy new page)]` will create a page with the hash `#newpage`, but the link to it will display `Fancy new page`.
+            
+        ### Hidden pages
+        If you prefer to not create a link automatically, wrap the text with double square brackets `[[example]]`. The page will still be created and inserted in the document structure, but it will be up to you to link your visitors to it. You can do so by creating a markdown link to the page hash: `[Link to the page](#hiddenpage)`. If your page ID has spaces in it, wrap the markdown link in `< >`: `[Link to the page](<#hidden page>)`
+
+        Note that when creating a hidden page, its location in the site still follows the indentation rules and will be reflected in the breadcrumbs at the top of the page.
+
+        ### Comments / draft pages
+        Any line that starts with `//` is a comment and won't be parsed. Any page that that starts with `.` (i.e.  `[.page]`) won't be parsed, nor inserted in the document structure. Good for drafts.
+
+        ### Options
+        Any line that starts with `$` is considered an `option` and is not displayed in the document structure, but it will be parsed and used under the bonnet to change the generated site appeareances / behaviour. 
+        
+        Options ar written in the `$[option] : [value]` format, or can precede indented blocks for options with multi-line values, like the `$style` option:
+        ```
+        \$style:
+            body {
+                background: red;
+            }
+        ```
+
+        When an `$option` is added before the home page / at indentation zero, its effect will be applied to the whole website. Otherwise, it's applied to the parent page. Note that some options are only valid in a context or the other.
+
+        For a full list of options and their effects, [click here](#options).
+
+        [[options]]
+            - `$background-color: <color> || <color-light>,<color-dark>`
+            Sets the color used for the page background. Can be a comma-separate set of two values, where the first value be used for the light theme and the second value for the dark theme. If a single value is supplied, it will be used on both themes.
+
+            - `$text-color: <color> || <color-light>,<color-dark>`
+            Sets the color used for the page text. Can be a comma-separate set of two values, where the first value be used for the light theme and the second value for the dark theme. If a single value is supplied, it will be used on both themes.
+            
+            - `$accent-color: <color> || <color-light>,<color-dark>`
+            Sets the color for links. Can be a comma-separate set of two values, where the first value be used for the light theme and the second value for the dark theme. If a single value is supplied, it will be used on both themes.
+
+            - `$theme: <light || dark>`
+            By default, sites will use the `prefers-color-scheme` query to resolve the theme based on the user's preference. Set this option to always force a specific theme.
+
+            - `$title: <title>`
+            Sets the site title and the content of the `title` head tag.
+
+            - `$description: <description>`
+            Sets the content of the `description` head meta tag.
+            
+            - `$style: <style rules>`
+            The value of this option will be appended as a `<style>` tag on the page. Can be set as an indented block to support multi-line text. for example, the following option will set the will set the page background to red:
+            ```
+            \$style:
+                <style>
+                body {
+                    background: red;
+                }
+                </style>
+            ```
+            Note that it's not necessary to add the `<style></style>` tag, but doing so will enable css syntax highlighting.<br>
+            When set before the home page, the style will be applied to the same site. When set under a page, each rule will be prepended with the page ID so that the rules will only apply to that specific page.
+
+    [cli(command line interface)]
+        If you prefer to write locally, you can use the `imml` command line interface to generate the static html file.
+
+        With node.js installed, run `npx imml <path to your text file>`. By default it will create the file in a `dist` folder in your current working directory.
+        
+        The cli supports the following options:
+        ```
+        -o, --output <directory>  directory to export the generated html file to
+        -s, --style <file>        stylesheet file to use instead of the default one
+        -h, --help                display help for command
+        ```
+    
+    <br>
+
+    [madewith(made with imml)]
+        If you're using `imml` for a personal website, feel free to submit a pull request and add a link to your site. 
+        
+        - [leoncvlt.com](https://leoncvlt.com)
+        - [mikroskeem.eu](https://mikroskeem.eu)
+        
+    ---
+
+    ### contact with me via
+    - [linkedin](https://linkedin.com/in/haonguyen97ftu)
+    - [github](https://github.com/haonguyen97ftu)
+    - [facebook](https://facebook.com/haonguyendrew)
+
+$style:
+    <style>
+    img.site-logo {
+        height: 16px;
+        image-rendering: pixelated;
+    }
+    @media (prefers-color-scheme: dark) {
+        img.site-logo { 
+            filter: invert(); 
+        }
+    }
+    [data-theme="light"] img.site-logo { 
+        filter: none; 
+    }
+    [data-theme="dark"] img.site-logo { 
+        filter: invert(); 
+    }
+    a.external:after {
+        content: " ↗";
+    }
+    </style>

@@ -1,0 +1,114 @@
+$title: hao nguyen portfolio
+$description: a data analyst
+
+[home]
+    <img src="avatar.png?raw=true" style="width:160px;border-radius:100%;filter:saturate(0)contrast(1.1)brightness(0.9);">      
+    
+    <b>Nguyễn Văn Hào | Hanoi</b>
+    
+    I am currently looking for a job related to data analyst / business intelligence or assistant with background experience in marketing, business, banking and IT.
+
+
+    I have held the positions of account manager and project manager with the above experiences. I am someone who directly works with customers and understands the desires of business owners and those in charge of sales.
+    
+    >In addition, I am also in charge of the data analyst position for a number of projects and companies that need to report on excel, google sheets, and require large data visualization.
+
+    ### my contact
+    `Phone: 0968760810`
+    `Email: haonguyen97.ftu@gmail.com`
+    `Address: 68 Cau Giay Str, Quan Hoa Ward, Cau Giay District, Hanoi City`
+    - and you'd known that here is my website [haonguyen97ftu.github.io](https://haonguyen97ftu.github.io)
+    - <i>I prefer to contact via email</i>
+
+    ### my cv pdf
+    ><a href="địa_chỉ_liên_kết">eng</a>
+    ><a href="địa_chỉ_liên_kết">vie</a>
+
+    [cvonline(my cv online)]
+        ## Data Project
+        <b>Tom Vang Technology - Golden Shrimp</b> • 2023
+        >Build <font color=blue>automation dashboard on googlesheet</font> about shrimp farming costs, by farming season, day, month, year and stage of shrimp farming
+        [Automation Dashboard on GG Sheet Project](https://docs.google.com/spreadsheets/d/1fdd8IWN5Z1Po7yLvTT9hiozbyXZnKKNwQDc85qOD21I/edit?usp=sharing)
+        [Project Overview - Notion Note](https://factual-pyjama-540.notion.site/Nguy-n-V-n-H-o-Hanoi-f9b942bf571749bdb9f081a730feef7f?pvs=74)
+        ## Experience
+        <b>Account Excecutive</b>
+        [Breathtaking Vietnam Agency](https://agency.breathtakingvietnam.com) • 03/2022 → 04/2024
+        >Find and build relationships with clients who are marketing leaders in corporations or SME owners
+        Pitching proposals to customers
+        Act as a bridge between clients and agency, manage the quality and progress of the projects
+        Conduct meetings with clients to exchange information, and updates of the project
+
+        <b>Customer Development Excecutive</b>
+        [One Mount Distribution](https://onemount.com/distribution) • 07/2021 → 11/2021
+        >Visit daily with grocery owners to sell FMCGs and consult on financial services
+        Report daily to direct manager about sales activities
+        Research and identify problems, insights, and solutions for enhancing sales performance
+        Present ideas to BOD or direct manager
+
+        <b>Sale Executive</b>
+        [Anima Fashion Vietnam](https://anima.com.vn) • 08/2019 → 09/2020
+        >Find and maintain relationships with customers who require company uniforms
+        Consult materials, designs and prices for customer uniforms
+        Place orders to production department depending on the client's orders and requirements
+        Ensure timely and accurate delivery of the orders
+
+        ## Extra experience
+        <b>Idea Creator</b> 
+        EZM LLC • 2020
+        >Create ideas for print-on-demand products (t-shirts, canvas, decorations) targeting the <font color="blue">American market.</font>
+        Manage and optimize <font color="blue">Facebook Ads.</font>
+        Conduct market research to identify new trends and opportunities for selling products
+
+        <b>Designer Freelancer</b>
+        >Design posters, flyer, food menu for facebook fanpage
+        <a href="cv/designportfolio.pdf">Here is my design portfolio</a>
+
+        ## Course
+        <b>Entry2Data</b>
+        [Datatomic](https://datatomic.vn/) • 2023
+        >SQL, Python, Power BI and Machine Learning
+
+        ## Education
+        <b>Major Internatonal Economics</b>
+        [Foreign Trade University](https://ftu.edu.vn/) • 2015 → 2019
+        >Graduated with excellent with GPA: 3.37/4          
+
+    [data visualization project - notion note](https://factual-pyjama-540.notion.site/Nguy-n-V-n-H-o-Hanoi-f9b942bf571749bdb9f081a730feef7f?pvs=4)
+
+    | Title                 | Tech                | Year
+    | --------------------- | ------------------- | ----
+    | [Golden Shrimp automation dashboard](https://docs.google.com/spreadsheets/d/1fdd8IWN5Z1Po7yLvTT9hiozbyXZnKKNwQDc85qOD21I/edit?usp=sharing) | `GG Sheet`| 2023
+   
+
+    [project data on kaggle](https://www.kaggle.com/haovannguyen)
+     
+   
+    ---
+
+    ### social contact via
+    - [linkedin](https://linkedin.com/in/haonguyen97ftu)
+    - [github](https://github.com/haonguyen97ftu)
+    - [facebook](https://facebook.com/haonguyendrew)
+    - [kaggle](https://www.kaggle.com/haovannguyen)
+
+$style:
+    <style>
+    img.site-logo {
+        height: 16px;
+        image-rendering: pixelated;
+    }
+    @media (prefers-color-scheme: dark) {
+        img.site-logo { 
+            filter: invert(); 
+        }
+    }
+    [data-theme="light"] img.site-logo { 
+        filter: none; 
+    }
+    [data-theme="dark"] img.site-logo { 
+        filter: invert(); 
+    }
+    a.external:after {
+        content: " ↗";
+    }
+    </style>
